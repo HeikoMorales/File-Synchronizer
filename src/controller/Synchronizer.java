@@ -35,11 +35,11 @@ public class Synchronizer extends RecursiveTask<Long> {
             } else {
 
                 if (subFile.getName().endsWith(extension)) {
+                    fileCount++;
 
                     try {
                         copyFile(subFile, new File(finalDirectory));
                     } catch (FileAlreadyExistsException e) {
-                        fileCount++;
 
                         if (subFile.lastModified() > new File(finalDirectory + "\\" + subFile.getName()).lastModified()) {
 
