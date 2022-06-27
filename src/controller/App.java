@@ -37,7 +37,6 @@ public class App {
         extension = scanner.nextLine();
         System.out.println("Enter final directory: ");
         finalDirectory = scanner.nextLine();
-
     }
 
     public static void main(String[] args) {
